@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html id="page">
+   <head>
+      <title>Sufriendo con cirrus</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+      <meta charset="UTF-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge;"/>
+      <link href="https://unpkg.com/cirrus-ui" type="text/css" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"/>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"/>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous" ></script> 
+      <script>
+         function toggleModal() {
+           // Toggle modal visibility
+           const modal = document.querySelector('#example-modal');
+           modal.classList.toggle("modal--visible");
+         }
+         </script>
+   </head>
+   <body>
+      <div class="header header-fixed unselectable header-animated">
+         <div class="header-brand">
+            <div class="nav-item no-hover">
+               <h6 class="title">Nugget INC</h6>
+            </div>
+         </div>
+         <div class="header-nav" id="header-menu" role="button">
+            <div class="nav-right">
+               <div class="nav-item has-sub toggle-hover" id="dropdown">
+                  <a class="nav-dropdown-link">Menu</a> 
+                  <ul class="dropdown-menu dropdown-animated" role="menu">
+                     <li role="menuitem"><a href="#contacto">Contactame</a></li>
+                     <li role="menuitem"><a href="https://www.youtube.com/watch?v=fC7oUOUEEi4">Informacion importante</a></li>
+                     <li role="menuitem"><a href="https://www.youtube.com/watch?v=fC7oUOUEEi4">Tutorial sopa de pollo</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <section>
+         <div class="hero pt-5">
+             <div class="hero-body">
+               <div class="content px-12-lg px-24-xl">
+                 <div class="u-flex u-items-center u-gap-4 u-flex-column u-gap-8-lg u-flex-row-md">
+                   <div>
+                     <img class="u-round-xs w-100p w-60p-sm w-auto-md u-shadow-lg" src="img/bird-8391450_1920.jpg" />
+                   </div>
+                   <div>
+                     <h1 class="headline-3">hey!</h1>
+                     <p class="lead">Mi nombre es nugget y soy una agente inmobiliaria con mucha experiencia, empecé mi carrera en kamurocho tokyo en 1988, y desde entoces le conseguí tando dinero a mi jefe que se compro una estatua de oro muy fea.</p>
+                   </div>
+                 </div>
+                 <div class="divider"></div>
+               </div>
+             </div>
+           </div>
+      </section>
+
+      <section class="mb-12">
+         <div class="content">
+            <div class="grid u-gap-2 u-text-center font-bold">
+
+
+
+               <div class="grid-c-4 grid-r-6 bg-indigo-200 text-indigo-700 u-round-xs" style="">
+                     <div class="pt-2">
+                        <p>La horrorosa figura junto a mi jefe, Kiryu Kazuma</p>
+                     </div>
+                   <img src="img/estatua.JPG" class="u-round-xs w-100p w-60p-sm w-auto-md u-shadow-lg">
+                   <div class="pt-2">
+                     <p>Life feed de mi twitter @chimken</p>
+                  </div>
+                   <div class="card">
+                     <div class="card__container">
+                         <div class="card__image" style="background-image: url(https://images.unsplash.com/photo-1467952497026-86722ef1916f?dpr=1.25&amp;auto=compress,format&amp;fit=crop&amp;w=1199&amp;h=799&amp;q=80&amp;cs=tinysrgb&amp;crop=)"></div>
+                     </div>
+                     <div class="content">
+                         <div class="space"></div>
+                         <div class="tile tile--center">
+                             <div class="tile__icon">
+                                 <figure class="avatar">
+                                     <img src="img/250.png" alt="Person">
+                                 </figure>
+                             </div>
+                 
+                             <div class="tile__container">
+                                 <p class="tile__title">Nugget_078</p>
+                                 <p class="tile__subtitle"><a>@chimken</a></p>
+                             </div>
+                         </div>
+                         <p>Este es mi amigo paco<a href="!#"></a></p>
+                     </div>
+                     <div class="card__footer level content">
+                         6:32 PM - 3 Jul 56
+                         <div class="u-pull-right">
+                             <div class="level-right">
+                                 <a class="level-item">
+                                     <span class="icon"><i class="fa fa-wrapper small fa-reply" aria-hidden="true"></i></span>
+                                 </a>
+                                 <a class="level-item">
+                                     <span class="icon"><i class="fa fa-wrapper small fa-retweet" aria-hidden="true"></i></span>
+                                 </a>
+                                 <a class="level-item">
+                                     <span class="icon"><i class="fa fa-wrapper small fa-heart" aria-hidden="true"></i></span>
+                                 </a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+
+                  <div class="card card--slide-up">
+                     <div class="card__container">
+                        <div class="card__image" style="background-image: url(https://images.unsplash.com/photo-1467952497026-86722ef1916f?dpr=1.25&amp;auto=compress,format&amp;fit=crop&amp;w=1199&amp;h=799&amp;q=80&amp;cs=tinysrgb&amp;crop=)"></div>
+                    </div>
+                    <div class="card__mobile-title">
+                        <div class="content">
+                              <div class="space"></div>
+                              <div class="tile tile--center">
+                                 <div class="tile__icon">
+                                    <figure class="avatar">
+                                          <img src="img/250.png" alt="Person">
+                                    </figure>
+                                 </div>
+                     
+                                 <div class="tile__container">
+                                    <p class="tile__title">Nugget_078</p>
+                                    <p class="tile__subtitle"><a>@chimken</a></p>
+                                 </div>
+                              </div>
+                        </div>
+                     </div>
+
+                    
+                     
+                     <div class="card__body content">
+                        <p>Este es mi amigo pepe, no confundirlo con paco</p>
+                     </div>
+                     <div class="card__footer level content">
+                        6:32 PM - 3 Jul 56
+                        <div class="u-pull-right">
+                            <div class="level-right">
+                                <a class="level-item">
+                                    <span class="icon"><i class="fa fa-wrapper small fa-reply" aria-hidden="true"></i></span>
+                                </a>
+                                <a class="level-item">
+                                    <span class="icon"><i class="fa fa-wrapper small fa-retweet" aria-hidden="true"></i></span>
+                                </a>
+                                <a class="level-item">
+                                    <span class="icon"><i class="fa fa-wrapper small fa-heart" aria-hidden="true"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+               </div>
+
+
+
+               <div class="grid-c-8 grid-r-3 bg-indigo-200 text-indigo-700 u-round-xs" style="">
+                   <p>Main Content</p>
+
+                   <pre><code class="dark" data-lang="JavaScript">// Falta todo el proceso de busqueda
+                     // ----------------------------------
+                     var nombres = new Array('Maria','Beatriz','Claudia','Natalia','Maricruz','Mireia','Elena','Paula','Maria del Mar','Alicia','Marta','Felix','Juan Carlos','Raul');
+                     var telefonos = new Array('667900345','665989434','609878888','950232681','950265167','950233443','656432555','912345678','912860970','637900345','635989434','669090062','930232681','677876910');
+                     var ciudades = new Array('Madrid','Barcelona','Cuenca','Navarra','Mallorca','Menorca','Sevilla','Palencia','Murcia','Granada','Valencia','Almeria','Jaen','Oviedo');
+                     var agenda = new Array(nombres, telefonos, ciudades);
+                     //alert(agenda[0][0]);
+                     var nombresinordenar= new Array();
+                     var telefonosinordenar= new Array();
+                     var ciudadesinordenar= new Array();
+                     var agendasinordenar = new Array(nombresinordenar, telefonosinordenar, ciudadesinordenar);
+                     var hombre,tope,topebucle,numero;
+                     topebucle=nombres.length-1;
+                     for(i=0; i<=topebucle; i++){
+                        //document.write("<br>" + ciudades[i] );
+                        //mujer=agenda[0][i].substring(2);
+                       nombresinordenar[i]=nombres[i];
+                       telefonosinordenar[i]=telefonos[i]; 	
+                       ciudadesinordenar[i]=ciudades[i]; 
+                       for(j=0; j<=2; j++){	
+                        agenda[j][i] = agenda[j][i].concat("                    ");
+                        agenda[j][i] = agenda[j][i].substring(0,20);
+                        agenda[j][i] = agenda[j][i].concat(i);
+                       }; 	
+                        //document.write("<br>" + agenda[0][i] + " -- " + agenda[1][i] + " -- " +agenda[2][i] );
+                        //mujer=agenda[0][i].substring(20);
+                        //alert(mujer);
+                     };
+                     for(j=0; j<=2; j++){	
+                        agenda[j]=agenda[j].sort();
+                        //alert(agenda[j]);
+                     }; 
+               
+                     //alert(nombresinordenar);
+                     //alert(agendasinordenar);
+                     
+                     for(j=0; j<=2; j++){	
+                         document.write("<br><br>" + "Ordenado por" + (j+1)+ " campo" + "<br>" );
+                        for(i=0; i<=topebucle; i++){
+                           numero=agenda[j][i].substring(20);
+                           document.write("<br>" + agendasinordenar[0][numero] + " -- " + agendasinordenar[1][numero] + " -- " +agendasinordenar[2][numero] );
+                        };
+                     };</code></pre>
+               </div>
+
+
+
+               <div class="grid-c-4 grid-r-3 bg-indigo-200 text-indigo-700 u-round-xs" style="">
+                  <div class="pt-2">
+                     <p>Informacion inutil(tablas)</p>
+                </div>
+                  <table class="table">
+                     <thead>
+                         <tr>
+                             <th><abbr title="Title1">Año</abbr></th>
+                             <th><abbr title="Title2">Beneficios conseguidos</abbr></th>
+                             <th><abbr title="Title3">Familias arruinadas</abbr></th>
+                             <th>Paises donde soy buscada por la policia</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <tr>
+                             <th>1929</th>
+                             <td>3.47$</td>
+                             <td>Solo la mia</td>
+                             <td>0</td>
+                         </tr>
+                         <tr>
+                             <th>1967</th>
+                             <td>7.845.985€</td>
+                             <td>457</td>
+                             <td>3</td>
+                         </tr>
+                         <tr>
+                             <th>1988</th>
+                             <td>13.000.000.000 Y</td>
+                             <td>7839</td>
+                             <td>67</td>
+                         </tr>
+                     </tbody>
+                 </table>
+                 <div>
+                    <div class="">
+                     <p>Algunos de los paises que me buscan (tags)</p>
+                    </div>
+                  <div class="tag-container">
+                    <div class="tag px-2 py-1 bg-black text-white text-md font-bold uppercase">Francia</div>
+                    <div class="tag px-2 py-1 bg-black text-white text-md font-bold uppercase">Congo</div>
+                    <div class="tag px-2 py-1 bg-black text-white text-md font-bold uppercase">China</div>
+                    <div class="tag px-2 py-1 bg-black text-white text-md font-bold uppercase">India</div>
+                    <div class="tag px-2 py-1 bg-black text-white text-md font-bold uppercase">Canada</div>
+                    <div class="tag px-2 py-1 bg-black text-white text-md font-bold uppercase">Brazil</div>
+                    <div class="tag px-2 py-1 bg-black text-white text-md font-bold uppercase">Argentina</div>
+                    <div class="tag px-2 py-1 bg-black text-white text-md font-bold uppercase">Bulgaria</div>
+                    <div class="tag px-2 py-1 bg-black text-white text-md font-bold uppercase">Sudafrica</div>
+                    <div class="tag px-2 py-1 bg-black text-white text-md font-bold uppercase">Noruega</div>
+                  </div>
+                </div>
+               </div>
+
+
+
+               <div class="grid-c-4 grid-r-3 bg-indigo-200 text-indigo-700 u-round-xs" style="">
+
+                  <p>No sabia donde meter esto</p>
+                  <div class="tree">
+                     <div class="tree-item">
+                         <input type="checkbox" id="tree1" class="u-none">
+                         <label class="tree-item-header" for="tree1">
+                             <span class="icon">
+                                                     <i class="fa fa-wrapper fa-chevron-right small" aria-hidden="true"></i>
+                                                 </span> Trees
+                         </label>
+                         <div class="tree-item-body">
+                             <ul class="menu">
+                                 <li class="menu-item"><a href="!#">Oak</a></li>
+                                 <li class="menu-item"><a href="!#">Birch</a></li>
+                                 <li class="menu-item">
+                                     <div class="tree">
+                                         <input type="checkbox" id="tree2" class="u-none">
+                                         <label class="tree-item-header" for="tree2">
+                                             <span class="icon">
+                                                                     <i class="fa fa-wrapper fa-chevron-right small" aria-hidden="true"></i>
+                                                                 </span> Evergreens
+                                         </label>
+                                         <div class="tree-item-body">
+                                             <ul class="menu">
+                                                 <li class="menu-item"><a href="!#">Cedar</a></li>
+                                                 <li class="menu-item"><a href="!#">Loblolly Pine</a></li>
+                                                 <li class="menu-item"><a href="!#">Pitch Pine</a></li>
+                                             </ul>
+                                         </div>
+                                     </div>
+                                 </li>
+                             </ul>
+                         </div>
+                     </div>
+                 </div>
+                 
+                 <div class="tree">
+                     <div class="tree-item">
+                         <input type="checkbox" id="tree3" class="u-none">
+                         <label class="tree-item-header" for="tree3">
+                             <span class="icon">
+                                                     <i class="fa fa-wrapper fa-chevron-right small" aria-hidden="true"></i>
+                                                 </span> Fruits
+                         </label>
+                         <div class="tree-item-body">
+                             <ul class="menu">
+                                 <li class="menu-item"><a href="!#">Mangosteen</a></li>
+                                 <li class="menu-item"><a href="!#">Durian</a></li>
+                                 <li class="menu-item"><a href="!#">Jabuticaba</a></li>
+                             </ul>
+                         </div>
+                     </div>
+                 </div>
+                 
+                 <div class="tree">
+                     <div class="tree-item">
+                         <input type="checkbox" id="tree4" class="u-none">
+                         <label class="tree-item-header" for="tree4">
+                             <span class="icon">
+                                                     <i class="fa fa-wrapper fa-chevron-right small" aria-hidden="true"></i>
+                                                 </span> Flowers
+                         </label>
+                         <div class="tree-item-body">
+                             <ul class="menu">
+                                 <li class="menu-item"><a href="!#">Jade Vine</a></li>
+                                 <li class="menu-item"><a href="!#">Ghost Orchid</a></li>
+                                 <li class="menu-item"><a href="!#">Corpse Flower</a></li>
+                             </ul>
+                         </div>
+                     </div>
+                 </div>
+               </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+               </div>
+           </div>
+         </div>
+      </section>
+
+      <section class="mb-12">
+         <div class="content">
+
+            <div class="tab-container tabs--center">
+               <ul>
+                  <li class="selected"><div class="tab-item-content">Sobre mi</div></li>
+                  <li><div class="tab-item-content"><a href="https://www.youtube.com/watch?v=fC7oUOUEEi4">Wishlist de steam</a></div></li>
+                  <li><div class="tab-item-content"><a href="https://www.youtube.com/watch?v=fC7oUOUEEi4">Tienda de etsy</a></div></li>
+              </ul>
+           </div>
+
+            <div class="grid u-gap-3">
+
+               <div class="tile u-items-center mb-3 grid-c-4">
+                  <div class="tile__icon">
+                      <figure class="avatar"><img class="padded" src="img/250.png"></figure>
+                  </div>
+                  <div class="tile__container">
+                      <p class="tile__title m-0">Advertencia</p>
+                      <p class="tile__subtitle m-0">Corre</p>
+                  </div>
+                  <div class="tile__buttons">
+                      <button class="btn-primary p-0"><span class="icon"><i class="fa fa-wrapper small fa-check" aria-hidden="true"></i></span></button>
+                      <button class="btn-transparent p-0"><span class="icon"><i class="fa fa-wrapper small fa-times" aria-hidden="true"></i></span></button>
+                  </div>
+               </div>
+
+
+               <div class="grid-c-6">
+                  <div class="toast toast--primary">
+                     <button class="btn-close"></button>
+                     <h4 class="toast__title">Danger!</h4>
+                     <p>Run.</p>
+                 </div>
+               </div>
+
+               <div class="grid-c-3">
+                  
+               </div>
+
+               <div class="grid-c-3">
+                  
+               </div>
+
+              <div class="grid-c-12">
+                  <div class="u-text-center text-primary pt-5">
+                     <p>Cuando esta barra se llene será demasiado tarde</p>
+                  </div>
+                  <progress class="progress" value="25" max="100">25%</progress>
+              </div>
+
+            </div>
+         </div>
+      </section>
+      
+      <section id="contacto" class="grid">
+         <div class="content grid-cs-4 grid-ce-9">
+            <!-- Name -->
+            <input type="name" value="John Doe" />
+
+            <!-- Email -->
+            <input type="email" value="john.doe@cirrus.io" />
+
+            <!-- Url -->
+            <input type="url" value="https://spiderpig86.github.io/Cirrus" />
+
+            <!-- Search -->
+            <input type="search" placeholder="Search" />
+
+            <!-- Tel -->
+            <input type="tel" value="1-(800)-777-7777" />
+
+            <!-- Password -->
+            <input type="password" value="password" />
+
+            <!-- Number -->
+            <input type="number" value="420" />
+
+            <!-- Date -->
+            <input type="date" value="2017-3-21" />
+
+            <!-- Time -->
+            <input type="time" />
+
+            <!-- Color -->
+            <input type="color" value="#f03d4d" />
+
+            <!-- File -->
+            <div class="row level">
+               <div class="col-xs-3 level-item">
+                  <p class="m-0">File:</p>
+               </div>
+               <div class="col-xs-9 level-item"><input type="file"></div>
+            </div>
+
+            <!-- Select -->
+            <select class="select" placeholder="Choose one">
+               <option>Shibe</option>
+               <option>Doggo</option>
+               <option>Pupper</option>
+            </select>
+
+            <!-- Select (Multiple) -->
+            <select class="select" multiple>
+               <option>Shibe</option>
+               <option>Doggo</option>
+               <option>Pupper</option>
+            </select>
+
+            <!-- Range -->
+            <input type="range" id="volume" name="volume" min="0" max="11" />
+            <label htmlFor="volume">Volume</label>
+         </div>
+      </section>
+
+      <section>
+         <div class="content">
+            <div class="pagination pagination-bordered">
+               <div class="pagination-item short"><a href="!#">Prev</a></div>
+               <div class="pagination-item short"><a href="!#">1</a></div>
+               <div class="pagination-item short"><a>...</a></div>
+               <div class="pagination-item short"><a href="!#">3</a></div>
+               <div class="pagination-item short"><a href="!#">4</a></div>
+               <div class="pagination-item short selected"><a href="!#">5</a></div>
+               <div class="pagination-item short"><a>...</a></div>
+               <div class="pagination-item short"><a href="!#">23</a></div>
+               <div class="pagination-item short"><a href="!#">Next</a></div>
+            </div>
+            <div class="pagination no-bullets">
+               <div class="pagination-item pagination-prev">
+                  <a href="!#" class="u-block">
+                     <p class="pagination-item-subtitle">Previous</p>
+                     <h5 class="m-0">Ningún lado</h5></a>
+               </div>
+            <div class="pagination-item pagination-next">
+                <a href="!#" class="u-block">
+                    <p class="pagination-item-subtitle">Next</p>
+                    <h5 class="m-0">Murcia</h5></a>
+            </div>
+            
+         </div>
+      </section>
+
+      <footer class="footer">
+         <h6 class="footer__title text-white uppercase">Nugget INC</h6>
+         <div class="content">
+             <div class="divider"></div>
+     
+             <div class="row">
+                 <div class="col-4">
+                     <ul class="no-bullets">
+                         <a href="!#"><li class="footer__list-item">Home</li></a>
+                         <a href="!#"><li class="footer__list-item">Sign Up</li></a>
+                     </ul>
+                 </div>
+                 <div class="col-4">
+                     <ul class="no-bullets">
+                         <a href="!#"><li class="footer__list-item">Company Information</li></a>
+                         <a href="!#"><li class="footer__list-item">Contact Us</li></a>
+                     </ul>
+                 </div>
+                 <div class="col-4">
+                     <ul class="no-bullets">
+                         <a href="!#"><li class="footer__list-item">FAQ</li></a>
+                         <a href="!#"><li class="footer__list-item">Help Desk</li></a>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+         <p class="subtitle">Nugget © 1988.</p>
+     </footer>
+
+     <div class="modal modal--visible" id="example-modal"><a onclick="toggleModal" class="modal-overlay close-btn" aria-label="Close"></a>
+      <div class="modal-content" role="document">
+      <div class="modal-header u-flex u-justify-space-between">
+         <div class="modal-title">Informacion que le podría interesar</div>
+         <div onclick="toggleModal()" aria-label="Close">
+            <span class="icon" style="cursor: pointer;">
+               <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="u-inline-block fa-times w-2 h-4 fa-wrapper" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+            </span>
+         </div>
+      </div>
+      <div class="modal-body">
+         <a href="https://www.youtube.com/watch?v=fC7oUOUEEi4">Clickeame</a>
+      </div>
+      <div class="modal-footer u-text-right"><a onclick="toggleModal()"
+            class="u-inline-block mr-1"><button class="btn--sm">Cancel</button></a><a onclick="toggleModal()"
+            class="u-inline-block"><button class="btn-primary btn--sm">Share</button></a></div>
+      </div>
+   </div>
+
+   </body>
+</html>
