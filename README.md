@@ -258,6 +258,8 @@ La clase `footer_list-item` da unos estilos por defecto a los elementos de lista
 
 ## Menus
 
+Con las clases `menu` y `menu-item` en una lista podemos realizar un menu.
+
 ```html
 <ul class="menu">
   <li class="menu-item selected">
@@ -271,3 +273,23 @@ La clase `footer_list-item` da unos estilos por defecto a los elementos de lista
   </li>
 </ul>
 ```
+
+![menu1](https://github.com/LuzSerranoDiaz/TrabajoCirrus/assets/125549381/567bc4ef-1add-43a0-80af-47c896e6b4b4)
+
+También se pueden hacer menus dropdown con la clase `list-dropdown`.
+
+```html
+<div class="list-dropdown">
+    <div class="btn-group">
+        <button class="btn-primary">Dropdown</button>
+        <button class="btn-primary btn--sm btn-dropdown"><i class="fa fa-wrapper fa-caret-down" aria-hidden="true"></i>
+        </button>
+        <ul class="menu">
+            <li class="menu-item"><a href="#">Google Chrome</a></li>
+            <li class="menu-item"><a href="#">Firefox</a></li>
+            <li class="menu-item"><a href="#">Polarity</a></li>
+        </ul>
+    </div>
+</div>
+```
+
