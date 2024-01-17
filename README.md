@@ -9,7 +9,7 @@ Por defecto la pagina está dividida en 12 columnas y utilizamos distintas clase
   Utilizando las clases grid-c- grid-r-, asigna el nº de columnas al elemento, y grid-cs/rs- y grid-ce/re-, para asignar donde empiezan y acaban los elementos en el grid.  
   
 ![row y col](https://github.com/LuzSerranoDiaz/TrabajoCirrus/assets/125549381/fe2add22-0abb-4dc6-b799-74ed0ca1c3e2)
-```
+```html
 <div class="grid grid-rows-3 grid-cols-2 grid-flow-col u-gap-2 font-bold">
   <div class="u-text-center p-2 u-round-xs bg-orange-200 text-orange-700">1</div>
   <div class="u-text-center p-2 u-round-xs bg-orange-200 text-orange-700">2</div>
@@ -53,23 +53,135 @@ Hay 4 maneras de crear un boton en cirrus
 <input type="submit" value="Submit">
 <a class="btn">Button</a>
 ```
+![botones](https://github.com/LuzSerranoDiaz/TrabajoCirrus/assets/125549381/6d266f19-0251-4ac3-8078-6eb369eff56f)
+
+Sus tamaños pueden variar según la clase:
+
+![botonesTamaño](https://github.com/LuzSerranoDiaz/TrabajoCirrus/assets/125549381/8ccea822-b342-4a6e-858b-972e0aad0fe7)
 
 
+### Grupos de botones
+En cirrus se pueden agrupar botones utilizando un div con la clase `btn-group` y dentro botones (solo la etiqueta `<button>` funciona con esto).
+```html
+<div class="btn-group">
+    <button class="btn-primary">First Button</button>
+    <button class="btn-primary">Second Button</button>
+    <button class="btn-primary">Third Button</button>
+</div>
+```
+![btngroup](https://github.com/LuzSerranoDiaz/TrabajoCirrus/assets/125549381/12fe58e1-3f56-4632-a90b-4e9ebeb20b90)
 
+### Variaciones
+Boton animado `btn-animated`, le da un pequeño bote al presionarlo
 
+Boton desactivado, con el atributo `disabled` en los botones `input` y `<button>`, o poner en el nodo texto de las etiquetas `a` y `div` 'disabled'
+```html
+<button class="btn-info btn--disabled">Disabled</button>
+<div class="btn btn-info btn--disabled">Disabled</div>
+<input class="btn-info" type="submit" disabled value="Submit Disabled" />
+<a href="#" class="btn btn-info btn--disabled">Disabled</a>
+```
 
+Boton cargando, con las clases `animated loading`.
 
+`<button class="animated loading hide-text">123</button>`
 
+Boton de cerrar, con las clases `frame btn-close`
 
+`<button class="btn-close u-pull-right"></button>`
 
+## Header 
 
+El header tiene una estructura que se puede explicar con este ejemplo
 
+```html
+<div class="header header-fixed u-unselectable header-animated">
+```
+La clase `header` sirve como root y conntenedor de todo el header.
+```html
+    <div class="header-brand">
+        <div class="nav-item no-hover">
+            <a><h6 class="title">Logo</h6></a>
+        </div>
+```
+La clase `header-brand` es el contenedor más a la izquierda donde se suele poner el logo.
+```html
+        <div class="nav-item nav-btn" id="header-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+```
+La clase `nav-item` es para todos los elementos del nav.
+```html
+    <div class="header-nav" id="header-menu" role="button">
+```
+La clase `header-nav` está diseñada para añadir links, menus y otros componentes. En tablets y smartphones estos no aparecen.
+```html
+        <div class="nav-left">
+```
+`nav-left` es el contenedor más a la izquierda del `header-nav`
+```html
+            <div class="nav-item text-center">
+                <a href="#">
+                    <span class="icon">
+                        <i class="fab fa-wrapper fa-github" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="nav-item text-center">
+                <a href="#">
+                    <span class="icon">
+                        <i class="fab fa-wrapper fa-slack" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="nav-item text-center">
+                <a href="#">
+                    <span class="icon">
+                        <i class="fab fa-wrapper fa-twitter" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="nav-item has-sub toggle-hover" id="left-dropdown">
+                <a class="nav-dropdown-link">Animated</a>
+                <ul class="dropdown-menu dropdown-animated" role="menu">
+                    <li role="menuitem"><a href="#">First Item</a></li>
+                    <li role="menuitem"><a href="#">Second Item</a></li>
+                    <li role="menuitem"><a href="#">Third Item</a></li>
+                </ul>
+            </div>
+        </div>
 
+        <div class="nav-right">
+            <div class="nav-item active">
+                <a href="#">Active</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">Link 1</a>
+            </div>
+            <div class="nav-item has-sub" id="right-dropdown">
+                <a class="nav-dropdown-link">Click Me</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="menuitem"><a href="#">First Item</a></li>
+                    <li role="menuitem"><a href="#">Second Item</a></li>
+                    <li role="menuitem"><a href="#">Third Item</a></li>
+                    <li class="dropdown-menu-divider"></li>
+                    <li role="menuitem"><a href="#">Fourth Item</a></li>
+                </ul>
+```
+La clase `nav-dropdown-link` especifica que el link dentro del `nav-item` está asociado a un `dropdown-menu`.
+`dropdown-menu` es el menú `ul`, la clase solo sirve para asociarlo al `nav-dropdown-link`.
+`dropdown-mennu-divider` se utiliza para dividir los componentes del menú.
+```
+            </div>
+        </div>
+    </div>
+</div>
+```
 
-
-
-
-
+## Footer
 
 
 
