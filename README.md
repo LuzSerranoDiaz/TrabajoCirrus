@@ -293,3 +293,36 @@ También se pueden hacer menus dropdown con la clase `list-dropdown`.
 </div>
 ```
 
+## Media
+
+### Imagenes
+
+Con la clase `img-stretch` se hace la imagen responsiva.
+`<img class="img-stretch" src="img/gallina.png">`
+
+Con la clase `img-cover` y `img-contain` para hacer que la imagen ocupe su nodo padre entero.
+`<img class="img-contain" src="img/gatoPanchi.jpg" style="background: rgb(238, 238, 238); height: 350px;">`
+
+Con cirrus se pueden crear un elemento llamado `figures` que son contenedores que se posicionan independientemente del resto de la pagina.
+Para crearlos se contiene la imagen en una etiqueta `<figure>` con la clase `fig`.
+```html
+<figure class="fig">
+    <img src="img/yosemite-falls.png" />
+    <figcaption class="fig-caption u-text-center">
+        Yosemite Valley, United States
+    </figcaption>
+</figure>
+```
+
+### Videos
+
+Igual que la imagen se puede hacer responsivo el video con la clase `media-stretch`.
+
+Y se puede cambiar el 'ratio' de un video con las clases `rat-4-3` y `rat-1-1` para poner los videos en resolución 4:3 y 1:1.
+
+```html
+<div class="media-stretch rat-1-1">
+    <iframe width="560" height="315" src="./..." frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+```
+
