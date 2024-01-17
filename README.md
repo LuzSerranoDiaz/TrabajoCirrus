@@ -181,9 +181,93 @@ La clase `nav-dropdown-link` especifica que el link dentro del `nav-item` está 
 </div>
 ```
 
+![header](https://github.com/LuzSerranoDiaz/TrabajoCirrus/assets/125549381/e785499f-1097-4cc6-b50a-ceddf913c662)
+
+
 ## Footer
 
 
+```html
+<footer class="footer">
+```
+La clase `footer` sirve como contenedor de los elementos footer con un padding de 6 rem arriba y abajo.
+```html
+    <h6 class="footer__title text-white uppercase">Logo</h6>
+```
+La clase `footer_title` es un titulo estandar con un borde abajo.
+```html
+    <div class="content">
+        <div class="divider"></div>
+
+        <div class="row">
+            <div class="col-4">
+                <ul class="no-bullets">
+                    <a href="!#">
+                        <li class="footer__list-item">Home</li>
+                    </a>
+                    <a href="!#">
+                        <li class="footer__list-item">Sign Up</li>
+                    </a>
+                    <a href="!#">
+                        <li class="footer__list-item">Downloads</li>
+                    </a>
+                    <ul>
+                    </ul>
+                </ul>
+            </div>
+```
+La clase `footer_list-item` da unos estilos por defecto a los elementos de lista.
+```html
+            <div class="col-4">
+                <ul class="no-bullets">
+                    <a href="!#">
+                        <li class="footer__list-item">Company Information</li>
+                    </a>
+                    <a href="!#">
+                        <li class="footer__list-item">Contact Us</li>
+                    </a>
+                    <a href="!#">
+                        <li class="footer__list-item">Reviews</li>
+                    </a>
+                    <ul>
+                    </ul>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul class="no-bullets">
+                    <a href="!#">
+                        <li class="footer__list-item">FAQ</li>
+                    </a>
+                    <a href="!#">
+                        <li class="footer__list-item">Help Desk</li>
+                    </a>
+                    <a href="!#">
+                        <li class="footer__list-item">Forums</li>
+                    </a>
+                    <ul>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p class="subtitle">Company © 2018.</p>
+</footer>
+```
+![footer](https://github.com/LuzSerranoDiaz/TrabajoCirrus/assets/125549381/891d66ae-cb42-41c5-bb47-52e1398b5ebf)
 
 
+## Menus
 
+```html
+<ul class="menu">
+  <li class="menu-item selected">
+    <a>One</a>
+  </li>
+  <li class="menu-item">
+    <a>Two</a>
+  </li>
+  <li class="menu-item">
+    <a>Three</a>
+  </li>
+</ul>
+```
