@@ -23,3 +23,9 @@ Por defecto la pagina está dividida en 12 columnas y utilizamos distintas clase
 Para poder hacer los elementos reponsivos utilizamos las clases `xs, sm, md, lg y xl`.
 
 ![col sm](https://github.com/LuzSerranoDiaz/TrabajoCirrus/assets/125549381/ffa7cc7c-e85e-437f-b52b-6b7c4efb3acb)
+
+## Colores
+
+Los colores de cirrus a diferencia de bootstrap se realizan seleccionando un color base y luego su intensidad.
+`bg-(color)-(100-900)`
+Los colores base de cirrus son `pink, red, orange, yellow, green, teal, blue indigo, purple y grey`
