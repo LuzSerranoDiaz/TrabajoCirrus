@@ -326,3 +326,95 @@ Y se puede cambiar el 'ratio' de un video con las clases `rat-4-3` y `rat-1-1` p
 </div>
 ```
 
+Y con la clase `video-fullscreen` para hacer que ocupe toda la pantalla.
+
+## Formularios
+
+### Checkboxes
+
+Para estilizar con cirrus los checkboxes se utilizan las clases `form-ext-control form-ext-checkbox` en el elemento contenedor del checbox, `form-ext-input` en el elemento input y `form-ext-label` en el elemento label.
+
+```html
+<div class="form-ext-control form-ext-checkbox">
+    <input id="check1" class="form-ext-input" type="checkbox" disabled="">
+    <label class="form-ext-label" for="check1">Unchecked</label>
+</div>
+```
+
+Se pueden seleccionar los colores v1 con las clases `form-ext-input--*`.
+
+```html
+<div class="form-ext-control form-ext-checkbox">
+    <input id="check-dark" class="form-ext-input form-ext-input--dark" type="checkbox" checked />
+    <label class="form-ext-label" for="check-dark">dark</label>
+</div>
+```
+
+### Inputs
+
+Cada input viene estilada por defecto pero podemos cambiarlo en pequeñas maneras.
+
+Tamaños:
+Podemos cambiar los tamaños con la clase `input-*` * siendo `xs, sm, md, lg, xl`.
+
+![inputSize](https://github.com/LuzSerranoDiaz/TrabajoCirrus/assets/125549381/21ede3c2-44b5-41f6-b099-fbaaf177e0cb)
+
+Estados:
+Se pueden cambiar el estado de cada input con estas clases en el atributo `placeholder`
+
+```html
+<div class="input-control">
+<input disabled type="text" placeholder="Disabled state" />
+</div>
+```
+
+Todos los estados son `Normal state, Focused state, Disabled state, Success state, Error state`
+
+### Labels
+
+Se puede utilizar la clase `info` para poner un 'footnote'.
+
+```html
+<div class="col-lg-6">
+    <label>Regular Label</label>
+    <input type="text" placeholder="The label above is a regular label." />
+    <span class="info u-text-center">I am using the <code>info</code> class.</span>
+</div>
+```
+![footnote](https://github.com/LuzSerranoDiaz/TrabajoCirrus/assets/125549381/602e5a28-0106-4a9d-8484-3716f7b82b5b)
+
+### Radio
+
+Son checkboxes redondas, se aplican todas las mismas clases.
+
+### Toggle
+
+Para formar un toggle se utilizan las clases `form-ext-toggle__label` en la etiqueta label, `formt-ext-toggle` en el contenedor del toggle y `form-ext-toggle__toggler` en un div con el icono de toggle.
+
+```
+<div class="form-ext-control">
+    <label class="form-ext-toggle__label"><span>Toggle off</span>
+        <div class="form-ext-toggle">
+            <input name="toggleCheckbox" type="checkbox" class="form-ext-input" />
+            <div class="form-ext-toggle__toggler"><i></i></div>
+        </div>
+    </label>
+</div>
+```
+
+Tiene las mismas capacidades de estilo que los checboxes.
+
+## Elementos
+
+### Cards
+
+### Avatar
+
+### BreadCrumbs
+
+### Modals
+
+### Tables
+
+### Toasts
+
