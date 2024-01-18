@@ -472,11 +472,96 @@ El cuerpo se situa ahora en un div con las clases `card__body content`
 
 ### Avatar
 
+Los avatares son una manera de implementar una imagen en distintos elementos de manera más personal.
+```html
+<div class="avatar"><img src="..." alt="avatar"></div>
+```
+
+![avatar](https://github.com/LuzSerranoDiaz/TrabajoCirrus/assets/125549381/86568f10-e116-456b-85a6-e3b1c442b3cd)
+
+Tambien se pueden poner con texto utilizando el atributo `data-text`.
+
+```html
+<div class="avatar text-gray-000" data-text='Aa'></div>
+```
+
+Y se le pueden cambiar el tamaño con las clases `avatar--xs, avatar--sm, avatar--lg,` y `avatar--xl.`
+```html
+<div class="avatar avatar--xs" data-text="Jz"></figure>
+```
+
 ### BreadCrumbs
 
-### Modals
+Breadcrumbs es una lista indicando donde te situas actualmente dentro de la pagina web.
 
-### Tables
+![breadcrumbs](https://github.com/LuzSerranoDiaz/TrabajoCirrus/assets/125549381/9cc57ca9-8ab4-4578-8ad8-b224bfdf4076)
+
+Es muy sencillo de crear es una lista con las clases `breadcrumb` en el contenedor de los elementos y `breadcrumb__item` en los elementos de la lista.
+Tambien se utiliza la clase `breadcrumb__item--active` para indicar el elemento 'activo' o en el que se situa ahora mismo el usuario.
+
+```html
+<ul class="breadcrumb">
+    <li class="breadcrumb__item">
+        <a href="#">Home</a>
+    </li>
+    <li class="breadcrumb__item">
+        <a href="#">Settings</a>
+    </li>
+    <li class="breadcrumb__item breadcrumb__item--active">
+        <a href="#">Change Avatar</a>
+    </li>
+</ul>
+```
+Tambien se puede influenciar el posicionamiento con las clases `breadcrumb--center` para posicionarlo en el centro y `breadcrumb--right` para posicionarlo en la derecha.
+```html
+<ul class="breadcrumb breadcrumb--right">
+<ul class="breadcrumb breadcrumb--center">
+```
+
+Y se pueden seleccionar los separadores con la clase `bradcrumb--(arrow, bullet, dot, gt)`
+
+```html
+<ul class="breadcrumb breadcrumb--gt">
+<ul class="breadcrumb breadcrumb--arrow">
+<ul class="breadcrumb breadcrumb--bullet">
+<ul class="breadcrumb breadcrumb--dot">
+```
+
+![bcgt](https://github.com/LuzSerranoDiaz/TrabajoCirrus/assets/125549381/1dbebb7f-840e-4e91-984d-ccd6cbf2c1c3)
+
+### Tiles
+
+Tiles son alternativas a cards, y suelen ser más usadas en smartphones.
+
+```html
+<div class="tile">
+    <div class="tile__icon">
+        <figure class="avatar"><img src="https://www.seoclerk.com/pics/319222-1IvI0s1421931178.png"></figure>
+    </div>
+    <div class="tile__container">
+```
+Las clases principales de un tile son:
+`tile` que indica al div contenedor que es un tile.
+`tile__icon` que es la imagen que se sitúa como avatar.
+`tile__container` que indica el cuerpo del tile.
+```html
+        <p class="tile__title m-0">Robert Downey Jr. shared a post from <b>Stark Industries</b>.</p>
+        <p class="tile__subtitle m-0">Robert shared: 'Stark Industries is proud to announce its brand new suit.'</p><span class="info">23 minutes ago</span>
+```
+las clases `tile__title` indica el titulo del tile y `tile__subtitle` el subtitulo.
+```html
+        <div class="tile__buttons m-0">
+```
+La clase `tile__buttons` indica el div contenedor de los botones.
+```html
+            <button class="btn-primary btn--sm uppercase">View</button>
+            <button class="btn--sm uppercase">Dismiss</button>
+        </div>
+    </div>
+</div>
+```
+
+![tile](https://github.com/LuzSerranoDiaz/TrabajoCirrus/assets/125549381/0dddfcd9-cb5a-425d-a1f9-605798a92824)
 
 ### Toasts
 
