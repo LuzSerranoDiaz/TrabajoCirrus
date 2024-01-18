@@ -452,6 +452,24 @@ Y la clase `card__footer` define el footer de la card.
 
 #### Card animada
 
+Para realizar una card animada se tiene que poner la clase `card--slide-up` junto a la clase `card` en el div contenedor.
+`<div class="card card--slide-up">`
+La clase `card__title-container` se sustituye por la clase `card__mobile-title`.
+```html
+ <div class="card__mobile-title">
+        <div class="content">
+            <div class="tile">
+                <div class="tile__container">
+                    <p class="tile__title">Kangaroo Valley Safari</p>
+                    <p class="tile__subtitle">By John Doe</p>
+                </div>
+            </div>
+        </div>
+    </div>
+```
+El cuerpo se situa ahora en un div con las clases `card__body content`
+`<div class="card__body content">`
+
 ### Avatar
 
 ### BreadCrumbs
