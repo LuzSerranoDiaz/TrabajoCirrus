@@ -406,7 +406,51 @@ Tiene las mismas capacidades de estilo que los checboxes.
 
 ## Elementos
 
+Cirrus tiene una gran cantidad de elementos para la estructura de la pagina web, aquí se mostrarán los más importantes.
+
 ### Cards
+
+Las cards funcionan de la misma manera que en bootstrap.
+
+```
+<div class="card" style="max-width: 350px;">
+```
+La clase `card` sirve para definir el elemento contenedor.
+```html
+    <div class="card__container">
+        <div class="card__image"></div>
+        <div class="card__title-container">
+            <p class="title">Title</p><span class="subtitle">Subtitle</span>
+        </div>
+    </div>
+```
+Las clases `card__container` declara el contenido de la carta en sí,
+`card__image` la imagen principal de la card
+y `card__title-container` es el contenedor del titulo y subtitulo de la card.
+```html
+    <div class="content">
+        <p>Text and other content belong here, inside a <code>content</code> div.</p>
+    </div>
+```
+La clase `content` define el cuerpo de la card.
+```html
+    <div class="card__action-bar u-center">
+        <button class="btn-link outline">Buttons</button>
+        <button class="btn-link outline">Go here</button>
+    </div>
+```
+La clase `card__action-bar` define la parte de la carta donde se pueden insertar botones u otros elementos interactuables.
+```html
+    <div class="card__footer">
+        <div class="u-text-center"><span>This is additional footer text in <code>card__footer</code>.</span></div>
+    </div>
+</div>
+```
+Y la clase `card__footer` define el footer de la card.
+
+![card](https://github.com/LuzSerranoDiaz/TrabajoCirrus/assets/125549381/6612a006-3a75-4a7e-af1d-367b7fd43d46)
+
+#### Card animada
 
 ### Avatar
 
