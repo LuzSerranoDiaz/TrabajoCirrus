@@ -565,3 +565,25 @@ La clase `tile__buttons` indica el div contenedor de los botones.
 
 ### Toasts
 
+Los toasts de cirrus son las alerts de bootstrap, tienen la misma funcionalidad.
+
+La única clase necesaria para formar un toast es la clase `toast` en el div contenedor, junto al `toast__title` si se requiere un titulo y `toast--*` para seleccionar un color.
+
+```html
+<div class="toast toast--primary">
+    <button class="btn-close"></button>
+    <h4 class="toast__title">Danger!</h4>
+    <p>Run.</p>
+</div>
+```
+
+![run](https://github.com/LuzSerranoDiaz/TrabajoCirrus/assets/125549381/ace629ab-b5e4-49e2-8762-e00e4eac0ea6)
+
+
+Para incluir un boton de cerrado se utiliza.
+```html
+<button class="btn-close"></button>
+```
+![close](https://github.com/LuzSerranoDiaz/TrabajoCirrus/assets/125549381/8bb59046-e944-47c3-8449-4a17614cb150)
+
+
